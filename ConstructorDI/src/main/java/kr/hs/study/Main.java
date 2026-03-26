@@ -1,6 +1,7 @@
 package kr.hs.study;
 
 import kr.hs.study.beans.TestBean1;
+import kr.hs.study.beans.TestBean1_setter;
 import kr.hs.study.beans.TestBean2;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -19,6 +20,11 @@ public class Main {
 
         TestBean2 testBean = ctx.getBean("testBean2", TestBean2.class);
         testBean.prData();
+
+        // setter di
+        TestBean1_setter testBean1Setter = ctx.getBean("t1-setterDI", TestBean1_setter.class);
+        testBean1Setter.getData1();
+
         ctx.close();
     }
 }

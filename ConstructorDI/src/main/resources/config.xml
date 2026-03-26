@@ -16,4 +16,11 @@
         <constructor-arg ref="dataBean2"/>
         <constructor-arg ref="dataBean2"/>
     </bean>
+
+    <bean id="t1-setterDI" class="kr.hs.study.beans.TestBean1_setter">
+        <property name="data1" value="1"/>
+        <property name="data2" value="1.1"/>
+        <property name="data3" value="true"/>
+        <property name="data4" value="hello"/>
+    </bean>
 </beans>
